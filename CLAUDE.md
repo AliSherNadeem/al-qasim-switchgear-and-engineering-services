@@ -57,6 +57,13 @@ them by default.
 8. **Use the `ui-ux-pro-max` skill** whenever building, reviewing, or refining any UI — layout,
    components, styling, spacing, color, typography, responsiveness. Invoke it as part of the design
    process, not as an afterthought bolted on after markup is written.
+9. **Mobile-first, fully responsive, always.** This site must work and look correct on every device
+   class — mobile, tablet, laptop, and desktop. Write base (unprefixed) Tailwind classes for the
+   smallest screen first, then layer in `sm:`/`md:`/`lg:`/`xl:` overrides for larger viewports —
+   never the reverse (no desktop-first layouts patched with `max-*` breakpoints). Every new
+   component or page must be checked across common breakpoints (≈375px mobile, ≈768px tablet,
+   ≈1024px laptop, ≈1440px+ desktop) before being considered done: no horizontal scrolling, no
+   overlapping/clipped content, touch targets at least 44x44px, readable text at every size.
 
 ## SEO Requirements (critical — this determines whether the business is found online)
 
