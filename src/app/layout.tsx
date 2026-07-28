@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Lexend, Source_Sans_3 } from "next/font/google";
 import { SiteHeader } from "@/components/layout/site-header";
+import { Footer } from "@/components/layout/footer";
 import { siteConfig } from "@/lib/site-config";
 import "./globals.css";
 
@@ -35,6 +36,7 @@ export default function RootLayout({
       <body className="flex min-h-full flex-col">
         <SiteHeader />
         <main className="flex-1">{children}</main>
+        <Footer />
       </body>
     </html>
   );
