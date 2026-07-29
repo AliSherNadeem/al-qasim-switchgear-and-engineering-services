@@ -1,3 +1,5 @@
+import { products } from "@/lib/products";
+
 // Set NEXT_PUBLIC_SITE_URL to the real production domain when deploying.
 export const siteConfig = {
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
@@ -47,12 +49,8 @@ export const footerNav = {
     { label: "Contact Us", href: "/contact" },
     { label: "Feedback Form", href: "#" },
   ] satisfies NavItem[],
-  products: [
-    { label: "High & Low Voltage Termination", href: "#" },
-    { label: "Low Voltage Switchgears", href: "#" },
-    { label: "L.T Main Panel Board", href: "#" },
-    { label: "Auto Main Failure Panels (AMF)", href: "#" },
-    { label: "Power Factor Improvement Plant", href: "#" },
-    { label: "Motor Control Center", href: "#" },
-  ] satisfies NavItem[],
+  products: products.map((product) => ({
+    label: product.name,
+    href: `/products/${product.slug}`,
+  })) satisfies NavItem[],
 } as const;
