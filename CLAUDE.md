@@ -96,6 +96,24 @@ implemented with these practices from the start, not retrofitted later:
 - **Internal linking**: Cross-link related products/services/pages logically so crawlers can
   discover and rank the full site, not just the homepage.
 
+## Content Writing Rules
+
+Applies to all page copy (headings, paragraphs, product descriptions, metadata descriptions):
+
+- Write like a person describing the business, not like an AI summarizing it. Plain, direct
+  sentences over marketing-speak.
+- No corporate jargon or buzzwords ("cutting-edge", "state-of-the-art", "seamless", "robust
+  solutions", "leverage", "empower"). Genuine technical/industry terminology (breaker ratings,
+  IEC standards, panel construction terms) is fine and expected for this audience. The rule is
+  against empty marketing filler, not against real technical vocabulary.
+- No em dashes or en dashes in body copy. Use a period, comma, or "and" instead of a dash.
+- Keep sentences short and concrete. Say what the thing is and what it does, not how impressive it is.
+- Product pages: frame copy from the business's own perspective ("we manufacture and install
+  this"), not as a neutral encyclopedia description. Mention the variants/configurations available,
+  then explain how it works or what it does on site. Never state a specific certification, standard
+  number, or rating (voltage class, breaking capacity, IEC/WAPDA spec numbers, etc.) unless the user
+  has explicitly supplied that exact figure for the real product — do not infer or approximate one.
+
 ## Project Conventions
 
 - `src/app/` — routes only (pages, layouts, `loading`/`error`/`not-found`, `sitemap.ts`, `robots.ts`).
