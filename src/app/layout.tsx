@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import { Lexend, Source_Sans_3 } from "next/font/google";
 import { SiteHeader } from "@/components/layout/site-header";
 import { Footer } from "@/components/layout/footer";
+import { JsonLd } from "@/components/seo/json-ld";
 import { siteConfig } from "@/lib/site-config";
+import { getLocalBusinessJsonLd } from "@/lib/structured-data";
 import "./globals.css";
 
 const sourceSans = Source_Sans_3({
@@ -16,11 +18,28 @@ const lexend = Lexend({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.url),
   title: {
     default: siteConfig.name,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    siteName: siteConfig.name,
+    title: siteConfig.name,
+    description: siteConfig.description,
+    url: "/",
+  },
+  twitter: {
+    card: "summary",
+    title: siteConfig.name,
+    description: siteConfig.description,
+  },
 };
 
 export default function RootLayout({
@@ -34,6 +53,7 @@ export default function RootLayout({
       className={`${sourceSans.variable} ${lexend.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col">
+        <JsonLd data={getLocalBusinessJsonLd()} />
         <SiteHeader />
         <main className="flex-1">{children}</main>
         <Footer />

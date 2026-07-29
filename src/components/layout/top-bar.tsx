@@ -11,18 +11,18 @@ export function TopBar() {
       <Container className="flex flex-col items-start gap-3 py-3 sm:flex-row sm:items-center sm:justify-between">
         <Link href="/" className="flex shrink-0 items-center gap-2 sm:gap-3">
           <Image
-            src="/logo.png"
+            src="/logo.png?v=2"
             alt={siteConfig.name}
             width={128}
             height={128}
             priority
-            className="h-11 w-11 shrink-0 sm:h-20 sm:w-20 md:h-24 md:w-24 lg:h-28 lg:w-28"
+            className="h-11 w-11 shrink-0 sm:h-16 sm:w-16 md:h-20 md:w-20 lg:h-24 lg:w-24"
           />
           <span className="leading-tight font-black text-heading">
             {siteConfig.nameLines.map((line) => (
               <span
                 key={line}
-                className="block text-base sm:text-xl md:text-2xl lg:text-3xl"
+                className="block text-sm sm:text-lg md:text-xl lg:text-2xl"
               >
                 {line}
               </span>
@@ -40,7 +40,7 @@ export function TopBar() {
               {siteConfig.phone.display}
             </a>
 
-            <div className="flex items-center gap-2 sm:gap-3">
+            <div className="flex items-center">
               {socialLinks.map(({ name, href, Icon }) => (
                 <a
                   key={name}
@@ -48,7 +48,7 @@ export function TopBar() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={name}
-                  className="transition-opacity hover:opacity-80"
+                  className="flex size-11 items-center justify-center transition-opacity hover:opacity-80"
                 >
                   <Icon className="size-4" />
                 </a>

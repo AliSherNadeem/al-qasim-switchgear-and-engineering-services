@@ -14,7 +14,7 @@ export function Footer() {
         <div className="sm:col-span-2 lg:col-span-1 lg:max-w-xs lg:shrink-0">
           <Link href="/" className="flex flex-col items-start">
             <Image
-              src="/logo.png"
+              src="/logo.png?v=2"
               alt={siteConfig.name}
               width={128}
               height={128}
@@ -96,7 +96,7 @@ export function Footer() {
               <span>{siteConfig.address}</span>
             </li>
           </ul>
-          <div className="mt-5 flex items-center gap-4">
+          <div className="mt-5 -ml-2.5 flex items-center">
             {socialLinks.map(({ name, href, Icon }) => (
               <a
                 key={name}
@@ -104,7 +104,7 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={name}
-                className="transition-opacity hover:opacity-80"
+                className="flex size-11 items-center justify-center transition-opacity hover:opacity-80"
               >
                 <Icon className="size-5" />
               </a>

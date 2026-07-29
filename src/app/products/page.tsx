@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Products",
   description:
     "Browse switchgear and electrical engineering products from Al-Qasim Switch Gear and Engineering Services.",
+  alternates: {
+    canonical: "/products",
+  },
 };
 
 export default function ProductsPage() {

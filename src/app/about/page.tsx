@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "About Us",
   description:
     "Learn about Al-Qasim Switch Gear and Engineering Services and our commitment to reliable switchgear and electrical engineering solutions.",
+  alternates: {
+    canonical: "/about",
+  },
 };
 
 export default function AboutPage() {
