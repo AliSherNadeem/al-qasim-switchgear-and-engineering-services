@@ -6,7 +6,7 @@ import type { Product } from "@/lib/products";
 export function ProductCard({ product }: { product: Product }) {
   return (
     <Link href={`/products/${product.slug}`}>
-      <Card className="h-full transition-shadow hover:shadow-md">
+      <Card className="h-full transition-all duration-200 hover:scale-105 hover:shadow-md hover:ring-2 hover:ring-green-500">
         <div className="relative aspect-[4/3]">
           <Image
             src={product.images[0].src}

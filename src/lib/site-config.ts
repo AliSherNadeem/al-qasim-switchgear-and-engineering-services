@@ -33,7 +33,7 @@ export type NavItem = {
 export const navItems: NavItem[] = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
-  { label: "Products", href: "/products" },
+  { label: "Products", href: "#" },
   { label: "Contact Us", href: "/contact" },
 ];
 
@@ -51,6 +51,6 @@ export const footerNav = {
   ] satisfies NavItem[],
   products: products.map((product) => ({
     label: product.name,
-    href: `/products/${product.slug}`,
+    href: "#",
   })) satisfies NavItem[],
 } as const;
