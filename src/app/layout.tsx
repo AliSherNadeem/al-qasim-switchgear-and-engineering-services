@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Lexend, Source_Sans_3 } from "next/font/google";
+import { Poppins, Source_Sans_3 } from "next/font/google";
 import { SiteHeader } from "@/components/layout/site-header";
 import { Footer } from "@/components/layout/footer";
 import { JsonLd } from "@/components/seo/json-ld";
@@ -12,9 +12,10 @@ const sourceSans = Source_Sans_3({
   subsets: ["latin"],
 });
 
-const lexend = Lexend({
+const poppins = Poppins({
   variable: "--font-heading",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
 });
 
 export const metadata: Metadata = {
@@ -50,7 +51,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${sourceSans.variable} ${lexend.variable} h-full antialiased`}
+      className={`${sourceSans.variable} ${poppins.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col">
         <JsonLd data={getLocalBusinessJsonLd()} />
