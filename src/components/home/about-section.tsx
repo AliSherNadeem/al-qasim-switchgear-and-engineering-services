@@ -27,7 +27,8 @@ export function AboutSection() {
 
           <div>
             <p className="text-base text-muted-foreground sm:text-lg">
-              Al-Qasim Switch Gear and Engineering Services manufactures and
+              Al-Qasim Switch Gear Manufacturing and Engineering Services
+              manufactures and
               installs switchgear and control panels for industrial and
               commercial sites. We design, build, and install every panel
               ourselves, led by our CEO, {siteConfig.ceo.name}.

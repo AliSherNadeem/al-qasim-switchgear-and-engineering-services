@@ -6,7 +6,7 @@ import { siteConfig } from "@/lib/site-config";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Learn about Al-Qasim Switch Gear and Engineering Services, based in Shorkot City, and the panels we manufacture and install.",
+    "Learn about Al-Qasim Switch Gear Manufacturing and Engineering Services, based in Shorkot City, and the panels we manufacture and install.",
   alternates: {
     canonical: "/about",
   },
@@ -32,7 +32,8 @@ export default function AboutPage() {
 
         <div className="flex flex-col gap-4 text-base text-muted-foreground sm:text-lg">
           <p>
-            Al-Qasim Switch Gear and Engineering Services manufactures and
+            Al-Qasim Switch Gear Manufacturing and Engineering Services
+            manufactures and
             installs switchgear and control panels for industrial and
             commercial sites. We design each panel around what a project
             actually needs, build it in our own workshop, and install it on
