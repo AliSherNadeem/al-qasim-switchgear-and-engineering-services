@@ -18,11 +18,11 @@ export function TopBar() {
             priority
             className="h-11 w-11 shrink-0 sm:h-16 sm:w-16 md:h-20 md:w-20 lg:h-24 lg:w-24"
           />
-          <span className="leading-tight font-black text-heading">
+          <span className="font-heading leading-tight font-bold text-heading">
             {siteConfig.nameLines.map((line) => (
               <span
                 key={line}
-                className="block text-sm sm:text-lg md:text-xl lg:text-2xl"
+                className="block text-base sm:text-lg md:text-xl lg:text-2xl"
               >
                 {line}
               </span>

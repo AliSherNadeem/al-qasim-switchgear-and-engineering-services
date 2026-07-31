@@ -52,9 +52,11 @@ export function Footer() {
         </nav>
 
         <nav aria-label="Footer products" className="lg:shrink-0">
-          <h2 className="text-sm font-bold tracking-wide text-primary-foreground uppercase">
-            Products
-          </h2>
+          <Link href="/products">
+            <h2 className="text-sm font-bold tracking-wide text-primary-foreground uppercase transition-colors hover:text-primary-foreground/80">
+              Products
+            </h2>
+          </Link>
           <ul className="mt-4 flex flex-col gap-3 text-sm">
             {footerNav.products.map((item) => (
               <li key={item.label}>
