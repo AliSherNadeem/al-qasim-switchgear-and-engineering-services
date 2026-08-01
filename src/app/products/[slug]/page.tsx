@@ -62,14 +62,15 @@ function ImageGallery({
       {images.map((image) => (
         <div
           key={image.src}
-          className="relative aspect-[4/3] w-[calc(50%-0.5rem)] shrink-0"
+          className="relative aspect-[4/3] w-[calc(50%-0.5rem)] shrink-0 overflow-hidden rounded-xl"
         >
+          <div className="absolute inset-0 bg-[url('/images/bg.jpg')] bg-cover bg-center opacity-55" />
           <Image
             src={image.src}
             alt={image.alt}
             fill
             sizes="(min-width: 768px) 20vw, 45vw"
-            className="object-contain"
+            className="relative object-contain"
           />
         </div>
       ))}
