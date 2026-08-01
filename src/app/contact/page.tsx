@@ -8,7 +8,7 @@ import { siteConfig } from "@/lib/site-config";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Get in touch with Al-Qasim Switch Gear and Engineering Services.",
+    "Get in touch with Al-Qasim Switch Gear Manufacturing and Engineering Services.",
   alternates: {
     canonical: "/contact",
   },

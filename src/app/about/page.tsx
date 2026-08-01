@@ -6,7 +6,7 @@ import { siteConfig } from "@/lib/site-config";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Learn about Al-Qasim Switch Gear and Engineering Services, based in Shorkot City, and the panels we manufacture and install.",
+    "Learn about Al-Qasim Switch Gear Manufacturing and Engineering Services, based in Shorkot City, and the panels we manufacture and install.",
   alternates: {
     canonical: "/about",
   },
@@ -32,11 +32,18 @@ export default function AboutPage() {
 
         <div className="flex flex-col gap-4 text-base text-muted-foreground sm:text-lg">
           <p>
-            Al-Qasim Switch Gear and Engineering Services manufactures and
-            installs switchgear and control panels for industrial and
-            commercial sites. We design each panel around what a project
-            actually needs, build it in our own workshop, and install it on
-            site ourselves rather than passing the work on to someone else.
+            Al-Qasim Switch Gear Manufacturing and Engineering Services is an
+            electrical and mechanical engineering company providing
+            switchgear and control panel services to industrial and
+            commercial sectors.
+          </p>
+          <p>
+            Al-Qasim Switch Gear Manufacturing and Engineering Services is
+            engaged in designing, manufacturing, erecting, testing, and
+            commissioning switchgear and control panels for these projects.
+            We design each panel around what a project actually needs, build
+            it in our own workshop, and install it on site ourselves rather
+            than passing the work on to someone else.
           </p>
           <p>
             Our work covers low voltage distribution panels, main LT panels,
@@ -50,7 +57,7 @@ export default function AboutPage() {
             The company is led by our CEO, {siteConfig.ceo.name}, who
             oversees the engineering and manufacturing side of every project
             we take on. We are based in Shorkot City, Punjab, and take on
-            work across the surrounding region.
+            work across Pakistan.
           </p>
         </div>
       </div>

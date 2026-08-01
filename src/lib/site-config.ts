@@ -3,10 +3,14 @@ import { products } from "@/lib/products";
 // Set NEXT_PUBLIC_SITE_URL to the real production domain when deploying.
 export const siteConfig = {
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
-  name: "Al-Qasim Switch Gear and Engineering Services",
-  nameLines: ["Al-Qasim Switch Gear", "and Engineering Services"] as const,
+  name: "Al-Qasim Switch Gear Manufacturing and Engineering Services",
+  nameLines: [
+    "Al-Qasim Switch Gear",
+    "Manufacturing and",
+    "Engineering Services",
+  ] as const,
   description:
-    "Al-Qasim Switch Gear and Engineering Services designs and manufactures reliable switchgear and electrical engineering solutions for industrial and commercial projects.",
+    "Al-Qasim Switch Gear Manufacturing and Engineering Services designs and manufactures reliable switchgear and electrical engineering solutions for industrial and commercial projects.",
   phone: {
     display: "0319 1247525",
     href: "tel:+923191247525",
@@ -18,10 +22,11 @@ export const siteConfig = {
     name: "Engineer Sarfraz Ahmad",
   },
   social: {
-    facebook: "https://facebook.com",
-    instagram: "https://instagram.com",
-    whatsapp: "https://wa.me/923001234567",
-    tiktok: "https://www.tiktok.com",
+    facebook: "https://www.facebook.com/share/1R94QRXYP8/",
+    instagram:
+      "https://www.instagram.com/sarfraz320p1674?utm_source=qr&igsh=MTk3bGhjdHJ6bGxlMA==",
+    whatsapp: "https://wa.me/923191247525",
+    tiktok: "https://vm.tiktok.com/ZS9h8Hod6VQon-RsFfX/",
   },
 } as const;
 
@@ -43,11 +48,10 @@ export const footerNav = {
   links: [
     { label: "Home", href: "/" },
     { label: "About Us", href: "/about" },
-    { label: "Vision / Mission / Quality Policy", href: "#" },
-    { label: "Valuable Clients", href: "#" },
+    { label: "Vision / Mission / Quality Policy", href: "/#mission-vision" },
+    { label: "Valuable Clients", href: "/#clients" },
     { label: "Certification", href: "#" },
     { label: "Contact Us", href: "/contact" },
-    { label: "Feedback Form", href: "#" },
   ] satisfies NavItem[],
   products: products.map((product) => ({
     label: product.name,

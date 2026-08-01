@@ -3,7 +3,7 @@ import { Container } from "@/components/layout/container";
 
 export function MissionVisionSection() {
   return (
-    <section className="py-16 sm:py-20">
+    <section id="mission-vision" className="scroll-mt-24 py-16 sm:py-20">
       <Container>
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">

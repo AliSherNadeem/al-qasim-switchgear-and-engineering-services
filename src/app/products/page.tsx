@@ -6,7 +6,7 @@ import { products } from "@/lib/products";
 export const metadata: Metadata = {
   title: "Products",
   description:
-    "Browse switchgear and electrical engineering products from Al-Qasim Switch Gear and Engineering Services.",
+    "Browse switchgear and electrical engineering products from Al-Qasim Switch Gear Manufacturing and Engineering Services.",
   alternates: {
     canonical: "/products",
   },
