@@ -48,11 +48,10 @@ export const footerNav = {
   links: [
     { label: "Home", href: "/" },
     { label: "About Us", href: "/about" },
-    { label: "Vision / Mission / Quality Policy", href: "#" },
-    { label: "Valuable Clients", href: "#" },
+    { label: "Vision / Mission / Quality Policy", href: "/#mission-vision" },
+    { label: "Valuable Clients", href: "/#clients" },
     { label: "Certification", href: "#" },
     { label: "Contact Us", href: "/contact" },
-    { label: "Feedback Form", href: "#" },
   ] satisfies NavItem[],
   products: products.map((product) => ({
     label: product.name,

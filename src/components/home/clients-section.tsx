@@ -5,7 +5,7 @@ const PLACEHOLDER_CLIENT_COUNT = 6;
 
 export function ClientsSection() {
   return (
-    <section className="bg-muted/40 py-16 sm:py-20">
+    <section id="clients" className="scroll-mt-24 bg-muted/40 py-16 sm:py-20">
       <Container>
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">
