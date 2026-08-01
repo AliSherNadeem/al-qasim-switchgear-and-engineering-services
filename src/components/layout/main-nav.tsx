@@ -44,7 +44,7 @@ function isActive(pathname: string, href: string) {
 
 const navLinkClasses = (active: boolean) =>
   cn(
-    "inline-flex h-10 items-center gap-2 rounded-lg bg-transparent px-4 text-base font-semibold transition-all duration-200 hover:scale-105",
+    "inline-flex h-11 items-center gap-2 rounded-lg bg-transparent px-4 text-base font-semibold transition-all duration-200 hover:scale-105",
     "hover:bg-transparent focus:bg-transparent data-open:bg-transparent data-popup-open:bg-transparent",
     "data-open:hover:bg-transparent data-popup-open:hover:bg-transparent data-open:focus:bg-transparent",
     active

@@ -1,16 +1,14 @@
-import type { Metadata } from "next";
 import Image from "next/image";
 import { Container } from "@/components/layout/container";
 import { siteConfig } from "@/lib/site-config";
+import { buildPageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = buildPageMetadata({
   title: "About Us",
   description:
     "Learn about Al-Qasim Switch Gear Manufacturing and Engineering Services, based in Shorkot City, and the panels we manufacture and install.",
-  alternates: {
-    canonical: "/about",
-  },
-};
+  path: "/about",
+});
 
 export default function AboutPage() {
   return (
