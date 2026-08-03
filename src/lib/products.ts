@@ -63,8 +63,12 @@ export const products: Product[] = [
     ],
     images: [
       {
-        src: "/images/products/amf-panel.jpeg",
-        alt: "Auto main failure panel with two open breaker compartments",
+        src: "/images/products/auto-main-failure-panel-1.jpeg",
+        alt: "Auto main failure panel with an ATS controller section and a three section outgoing panel",
+      },
+      {
+        src: "/images/products/auto-main-failure-panel-2.jpeg",
+        alt: "Open auto main failure panel showing breakers, relays, and control wiring inside the enclosure",
       },
     ],
   },
@@ -109,6 +113,22 @@ export const products: Product[] = [
       {
         src: "/images/products/plc-panel-4.jpeg",
         alt: "PLC control panel internal busbars and wiring",
+      },
+    ],
+  },
+  {
+    slug: "mcc-panel",
+    name: "MCC Panel (Motor Control Center Panel)",
+    shortDescription:
+      "We build and install MCC panels that bring the starters and controls for several motors into one central panel.",
+    paragraphs: [
+      "We build and install MCC panels to bring the starters and controls for several motors together into one central panel instead of separate individual boards. Panels are built in sections, so a plant with many motors, like pumps, fans, and compressors, can have each one wired into its own compartment within the same enclosure.",
+      "Once installed, each section in the panel controls and protects one motor, with its own breaker, starter, and indicator lights on the front so an operator can start, stop, and monitor every motor from the same panel. Sections are built so any single motor can be isolated for maintenance without shutting down the others.",
+    ],
+    images: [
+      {
+        src: "/images/products/mcc-panel.jpeg",
+        alt: "Motor control center panel with five sections labeled MCC-A through MCC-E",
       },
     ],
   },
