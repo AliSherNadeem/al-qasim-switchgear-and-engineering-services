@@ -21,7 +21,7 @@ export function MissionVisionSection() {
             </p>
             <p className="text-base text-muted-foreground sm:text-lg">
               We want to be the company that industrial and commercial
-              clients in Shorkot City and across Punjab turn to first for
+              clients in Shorkot City and across Pakistan turn to first for
               panel manufacturing and installation, on the strength of work
               that keeps running long after we leave the site.
             </p>
