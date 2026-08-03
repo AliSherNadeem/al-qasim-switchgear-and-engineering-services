@@ -35,11 +35,13 @@ export const metadata: Metadata = {
     title: siteConfig.name,
     description: siteConfig.description,
     url: "/",
+    images: [siteConfig.ogImage],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: siteConfig.name,
     description: siteConfig.description,
+    images: [siteConfig.ogImage.url],
   },
 };
 

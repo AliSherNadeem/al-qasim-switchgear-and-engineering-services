@@ -1,16 +1,14 @@
-import type { Metadata } from "next";
 import { Container } from "@/components/layout/container";
 import { ProductCard } from "@/components/products/product-card";
 import { products } from "@/lib/products";
+import { buildPageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = buildPageMetadata({
   title: "Products",
   description:
     "Browse switchgear and electrical engineering products from Al-Qasim Switch Gear Manufacturing and Engineering Services.",
-  alternates: {
-    canonical: "/products",
-  },
-};
+  path: "/products",
+});
 
 export default function ProductsPage() {
   return (

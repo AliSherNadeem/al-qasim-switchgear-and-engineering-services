@@ -11,6 +11,12 @@ export const siteConfig = {
   ] as const,
   description:
     "Al-Qasim Switch Gear Manufacturing and Engineering Services designs and manufactures reliable switchgear and electrical engineering solutions for industrial and commercial projects.",
+  ogImage: {
+    url: "/images/about-us.jpg",
+    width: 7008,
+    height: 4672,
+    alt: "Inside an Al-Qasim Switch Gear control panel, showing wiring and control components",
+  },
   phone: {
     display: "0319 1247525",
     href: "tel:+923191247525",

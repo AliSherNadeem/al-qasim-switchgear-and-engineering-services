@@ -1,18 +1,16 @@
-import type { Metadata } from "next";
 import Image from "next/image";
 import { Phone, MapPin } from "lucide-react";
 import { Container } from "@/components/layout/container";
 import { ContactForm } from "@/components/contact/contact-form";
 import { siteConfig } from "@/lib/site-config";
+import { buildPageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = buildPageMetadata({
   title: "Contact Us",
   description:
     "Get in touch with Al-Qasim Switch Gear Manufacturing and Engineering Services.",
-  alternates: {
-    canonical: "/contact",
-  },
-};
+  path: "/contact",
+});
 
 export default function ContactPage() {
   return (

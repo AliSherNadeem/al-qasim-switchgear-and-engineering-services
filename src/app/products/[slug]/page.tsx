@@ -18,6 +18,7 @@ import {
   getProductBreadcrumbJsonLd,
   getProductJsonLd,
 } from "@/lib/structured-data";
+import { buildPageMetadata } from "@/lib/metadata";
 import { cn } from "@/lib/utils";
 
 export function generateStaticParams() {
@@ -36,13 +37,15 @@ export async function generateMetadata({
     return {};
   }
 
-  return {
+  return buildPageMetadata({
     title: product.name,
     description: product.shortDescription,
-    alternates: {
-      canonical: `/products/${product.slug}`,
+    path: `/products/${product.slug}`,
+    image: {
+      url: product.images[0].src,
+      alt: product.images[0].alt,
     },
-  };
+  });
 }
 
 function ImageGallery({

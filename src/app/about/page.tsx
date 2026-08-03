@@ -1,16 +1,14 @@
-import type { Metadata } from "next";
 import Image from "next/image";
 import { Container } from "@/components/layout/container";
 import { siteConfig } from "@/lib/site-config";
+import { buildPageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = buildPageMetadata({
   title: "About Us",
   description:
     "Learn about Al-Qasim Switch Gear Manufacturing and Engineering Services, based in Shorkot City, and the panels we manufacture and install.",
-  alternates: {
-    canonical: "/about",
-  },
-};
+  path: "/about",
+});
 
 export default function AboutPage() {
   return (
@@ -47,8 +45,9 @@ export default function AboutPage() {
           </p>
           <p>
             Our work covers low voltage distribution panels, main LT panels,
-            automatic changeover systems, power factor correction, and PLC
-            based control panels. On most projects we handle the job from
+            automatic changeover systems, power factor correction, MCC
+            panels, and PLC based control panels. On most projects we handle
+            the job from
             initial panel design through to wiring, testing, and final
             installation, so the same team is responsible for it from start
             to finish.
