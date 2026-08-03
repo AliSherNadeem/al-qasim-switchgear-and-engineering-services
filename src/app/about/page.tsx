@@ -45,8 +45,9 @@ export default function AboutPage() {
           </p>
           <p>
             Our work covers low voltage distribution panels, main LT panels,
-            automatic changeover systems, power factor correction, and PLC
-            based control panels. On most projects we handle the job from
+            automatic changeover systems, power factor correction, MCC
+            panels, and PLC based control panels. On most projects we handle
+            the job from
             initial panel design through to wiring, testing, and final
             installation, so the same team is responsible for it from start
             to finish.
