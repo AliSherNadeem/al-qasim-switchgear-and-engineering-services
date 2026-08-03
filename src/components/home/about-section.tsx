@@ -38,10 +38,10 @@ export function AboutSection() {
             <p className="mt-4 text-base text-muted-foreground sm:text-lg">
               Our work covers low voltage distribution panels, main LT
               panels, automatic changeover systems, power factor correction,
-              and PLC based control panels. On most projects we handle the
-              job from initial design through to wiring, testing, and final
-              installation, so the same team is responsible for it from
-              start to finish.
+              MCC panels, and PLC based control panels. On most projects we
+              handle the job from initial design through to wiring, testing,
+              and final installation, so the same team is responsible for it
+              from start to finish.
             </p>
             <Button asChild size="lg" className="mt-6 h-11 px-6">
               <Link href="/about">Learn More</Link>
