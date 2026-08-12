@@ -7,7 +7,9 @@ export function getProductJsonLd(product: Product) {
     "@type": "Product",
     name: product.name,
     description: product.shortDescription,
-    image: product.images.map((image) => `${siteConfig.url}${image.src}`),
+    ...(product.images.length > 0 && {
+      image: product.images.map((image) => `${siteConfig.url}${image.src}`),
+    }),
     brand: {
       "@type": "Organization",
       name: siteConfig.name,

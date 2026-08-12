@@ -132,6 +132,35 @@ export const products: Product[] = [
       },
     ],
   },
+  {
+    slug: "cable-tray-ladders",
+    name: "Cable Tray & Ladders",
+    shortDescription:
+      "We manufacture and install cable trays and ladders, with the full range of brackets and fittings to route cables through a site.",
+    paragraphs: [
+      "We manufacture and install cable trays and cable ladders for routing power, data, and control cables across a site instead of running them loose along walls or floors. Both are available hot dip galvanized, in G.I, or in M.S powder coated finish, and we build the full range of fittings to go with them, including wall brackets, hanging supports, bends, tees, and crosses.",
+      "Once installed, a cable tray or ladder carries a run of cables in the open along its length, keeping them supported, separated, and easy to inspect or add to later instead of buried in conduit. Trays work well for lighter cable runs that need enclosed side protection, while ladders suit heavier power cable runs and give better airflow around the cables. We size and route each run to match the site, whether that is a single straight span or a full network of brackets and bends through a plant.",
+      "We also supply wall brackets on their own, sized to carry a tray or ladder off a wall or overhead structure at the spacing a run needs. Each bracket mounts directly to a wall or ceiling and gives the tray or ladder a solid, level base to sit on for its full length.",
+    ],
+    images: [
+      {
+        src: "/images/products/cabletrays-1.jpg",
+        alt: "Three sizes of enclosed cable trays with perforated side rails and lids",
+      },
+      {
+        src: "/images/products/cabletrays-2.jpg",
+        alt: "Close-up of a galvanized perforated cable tray section",
+      },
+      {
+        src: "/images/products/cableladers-2.jpg",
+        alt: "Galvanized cable ladder section with rungs for routing power cables",
+      },
+      {
+        src: "/images/products/wall-bracket.jpg",
+        alt: "Pair of zinc plated wall brackets for mounting a cable tray or ladder",
+      },
+    ],
+  },
 ];
 
 export function getProductBySlug(slug: string) {
