@@ -19,6 +19,7 @@ import {
   getProductJsonLd,
 } from "@/lib/structured-data";
 import { buildPageMetadata } from "@/lib/metadata";
+import { ProductImagePlaceholder } from "@/components/products/product-image-placeholder";
 import { cn } from "@/lib/utils";
 
 export function generateStaticParams() {
@@ -37,14 +38,15 @@ export async function generateMetadata({
     return {};
   }
 
+  const [firstImage] = product.images;
+
   return buildPageMetadata({
     title: product.name,
     description: product.shortDescription,
     path: `/products/${product.slug}`,
-    image: {
-      url: product.images[0].src,
-      alt: product.images[0].alt,
-    },
+    image: firstImage
+      ? { url: firstImage.src, alt: firstImage.alt }
+      : undefined,
   });
 }
 
@@ -55,6 +57,14 @@ function ImageGallery({
   images: ProductImage[];
   className?: string;
 }) {
+  if (images.length === 0) {
+    return (
+      <div className={cn("min-w-0", className)}>
+        <ProductImagePlaceholder className="aspect-[4/3] w-full" />
+      </div>
+    );
+  }
+
   return (
     <div
       className={cn(
@@ -73,7 +83,7 @@ function ImageGallery({
             alt={image.alt}
             fill
             sizes="(min-width: 768px) 20vw, 45vw"
-            className="relative object-contain"
+            className="relative object-contain p-4"
           />
         </div>
       ))}
@@ -143,7 +153,7 @@ export default async function ProductPage({
             return (
               <div
                 key={paragraph}
-                className="grid grid-cols-1 items-center gap-10 md:grid-cols-2 md:gap-14"
+                className="grid grid-cols-1 items-start gap-10 md:grid-cols-2 md:gap-14"
               >
                 <ImageGallery
                   images={imageChunk}
@@ -162,7 +172,7 @@ export default async function ProductPage({
           })}
         </div>
       ) : (
-        <div className="mt-8 grid grid-cols-1 items-center gap-10 sm:mt-10 md:grid-cols-2 md:gap-14">
+        <div className="mt-8 grid grid-cols-1 items-start gap-10 sm:mt-10 md:grid-cols-2 md:gap-14">
           <ImageGallery
             images={product.images}
             className={reversed ? "md:order-2" : "md:order-1"}
