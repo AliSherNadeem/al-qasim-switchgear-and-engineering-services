@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 import { Container } from "@/components/layout/container";
 import { footerNav, siteConfig } from "@/lib/site-config";
 import { socialLinks } from "@/lib/social-links";
@@ -89,6 +89,15 @@ export function Footer() {
               >
                 <Phone className="size-4 shrink-0" aria-hidden="true" />
                 {siteConfig.phone.display}
+              </a>
+            </li>
+            <li>
+              <a
+                href={siteConfig.email.href}
+                className="flex items-center gap-2 transition-colors hover:text-primary-foreground"
+              >
+                <Mail className="size-4 shrink-0" aria-hidden="true" />
+                {siteConfig.email.display}
               </a>
             </li>
             <li className="flex items-start gap-2">
