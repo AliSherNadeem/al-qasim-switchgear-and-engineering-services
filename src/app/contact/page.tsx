@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Phone, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
 import { Container } from "@/components/layout/container";
 import { ContactForm } from "@/components/contact/contact-form";
 import { siteConfig } from "@/lib/site-config";
@@ -49,6 +49,20 @@ export default function ContactPage() {
                   className="font-medium text-foreground hover:text-primary"
                 >
                   {siteConfig.phone.display}
+                </a>
+              </dd>
+            </div>
+            <div className="flex items-center gap-3">
+              <dt>
+                <Mail className="size-5 text-primary" aria-hidden="true" />
+                <span className="sr-only">Email</span>
+              </dt>
+              <dd>
+                <a
+                  href={siteConfig.email.href}
+                  className="font-medium text-foreground hover:text-primary"
+                >
+                  {siteConfig.email.display}
                 </a>
               </dd>
             </div>
