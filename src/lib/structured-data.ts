@@ -53,6 +53,7 @@ export function getLocalBusinessJsonLd() {
     image: `${siteConfig.url}/logo.png`,
     logo: `${siteConfig.url}/logo.png`,
     telephone: siteConfig.phone.href.replace("tel:", ""),
+    email: siteConfig.email.display,
     address: {
       "@type": "PostalAddress",
       streetAddress: "Multan Road, opposite Bloom Park Society",

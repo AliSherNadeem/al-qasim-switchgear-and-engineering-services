@@ -21,6 +21,10 @@ export const siteConfig = {
     display: "0319 1247525",
     href: "tel:+923191247525",
   },
+  email: {
+    display: "qasimswitchgear@gmail.com",
+    href: "mailto:qasimswitchgear@gmail.com",
+  },
   address:
     "Multan road opposite to Bloom park society, Shorkot City, District Jhang.",
   ceo: {
